@@ -1,0 +1,9 @@
+[Unit]
+Description=Swayidle daemon
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/swayidle/swayidle-users
+
+[Install]
+WantedBy=default.target
