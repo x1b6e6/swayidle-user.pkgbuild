@@ -20,7 +20,14 @@ do
 	fi
 
 	case "$d" in
-		"$TIMEOUT_PREFIX"*-resume.d) ;;
+		"$TIMEOUT_PREFIX"*-resume.d)
+			TIME=${d#"$TIMEOUT_PREFIX"}
+			TIME=${TIME%-resume.d}
+			if [[ ! -d "$CONFS/$TIMEOUT_PREFIX$TIME.d" ]]
+			then
+				SWAYIDLE_ARGS+=(timeout "$TIME" true resume "$(cmd "$d")")
+			fi
+			;;
 		"$TIMEOUT_PREFIX"*.d)
 			TIME=${d#"$TIMEOUT_PREFIX"}
 			TIME=${TIME%.d}

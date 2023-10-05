@@ -1,7 +1,7 @@
 # Maintainer: x1b6e6 <ftdabcde@gmail.com>
 
 pkgname=swayidle-user
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="user scripts for swayidle"
 arch=('any')
@@ -16,7 +16,7 @@ source=(
 	"swayidle.sh"
 	"swayidle.service"
 )
-sha1sums=('50531eb086689c27c974aef9776dc1811db30afb'
+sha1sums=('746f48ccda1a92f71efb14f6146705057913bd32'
           '76b8bb1fd900b136ac752a306e215650f5e240ca')
 
 package() {
