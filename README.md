@@ -27,7 +27,7 @@ Will write "120 seconds elapsed" to `/tmp/file.txt` after 120 seconds from last 
 
 * Archlinux:
   ```bash
-  git clone https://github.com/x1b6e6/swayidle-users.pkgbuild.git
-  cd swayidle-users.pkgbuild
+  git clone https://github.com/x1b6e6/swayidle-user.pkgbuild.git
+  cd swayidle-user.pkgbuild
   makepkg -si
   ```

@@ -1,10 +1,12 @@
 # Maintainer: x1b6e6 <ftdabcde@gmail.com>
 
-pkgname=swayidle-users
+pkgname=swayidle-user
 pkgver=1.0.0
 pkgrel=1
 pkgdesc="user scripts for swayidle"
 arch=('any')
+replaces=('swayidle-users')
+conflicts=('swayidle-users')
 depends=(
 	"bash"
 	"swayidle"
