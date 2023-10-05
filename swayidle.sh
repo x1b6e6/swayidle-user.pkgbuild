@@ -7,7 +7,7 @@ SWAYIDLE_ARGS=()
 CONFS=$HOME/.config/swayidle
 
 cmd() {
-	echo "find '$CONFS/$1' -name '*.sh' -exec bash {} \\;"
+	echo "find '$CONFS/$1' -type f -executable -name '*.sh' -exec bash {} \\;"
 }
 
 

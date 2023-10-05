@@ -20,6 +20,7 @@ mkdir -d ~/.config/swayidle/timeout-120.d
 cat <<EOF > ~/.config/swayidle/timeout-120.d/20-write-to-file.sh
 echo "120 seconds elapsed" >> /tmp/file.txt
 EOF
+chmod +x ~/.config/swayidle/timeout-120.d/20-write-to-file.sh
 ```
 Will write "120 seconds elapsed" to `/tmp/file.txt` after 120 seconds from last user activity.
 
