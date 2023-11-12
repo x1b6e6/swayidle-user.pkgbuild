@@ -13,6 +13,11 @@ cmd() {
 
 while read -r d
 do
+	if [[ -f "$CONFS/$d" && "$d" == "env.sh" ]]
+	then
+		continue
+	fi
+
 	if [[ ! -d "$CONFS/$d" ]]
 	then
 		echo "$CONFS/$d is not a directory" >&2
